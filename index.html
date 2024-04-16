@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+            .grid-cols-footer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-800 dark:bg-gray-900">
+
+<footer class="bg-gray-700 dark:bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 grid-cols-footer">
+            <!-- Subscription Section -->
+            <div class="mb-8">
+                <h1 class="max-w-lg text-xl font-semibold tracking-tight text-[#313131] xl:text-2xl dark:text-white">Subscribe to Our Newsletter</h1>
+                <div class="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row md:space-x-8"> <!-- Increased space-x to add more space between input and button -->
+                    <input type="email" placeholder="Enter your email address" class="flex-1 px-4 py-2 text-[#313131] bg-white border rounded-md dark:bg-[#313131] dark:text-white dark:border-[#313131] focus:border-[#d86943] dark:focus:border-[#d86943] focus:outline-none focus:ring focus:ring-[#d86943] focus:ring-opacity-40">
+                    <button type="submit" class="px-4 py-2 bg-gray-600 text-white border border-black hover:bg-gray-800 dark:bg-[#313131] dark:text-white focus:outline-none focus:ring focus:ring-orange-500 rounded-md">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="pl-20">
+                <p class="font-semibold text-white dark:text-gray-200">Quick Links</p>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">Home</a></li>
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">Who we are</a></li>
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">Our Philosophy</a></li>
+                </ul>
+            </div>
+
+            <!-- Technologies -->
+            <div class="pl-20">
+                <p class="font-semibold text-white dark:text-gray-200">Technologies</p>
+                <ul>
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">HTML5</a></li>
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">CSS3</a></li>
+                    <li><a href="#" class="text-white dark:text-gray-200 hover:text-orange-500 underline">JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Footer Image -->
+        <div class="mt-8 text-center">
+            <img src="codespace-primary-logo-light (2).svg" alt="Footer Image" class="mx-auto h-12">
+        </div>
+        <!-- Footer Bottom Section -->
+        <hr class="border-gray-700 my-6">
+        <div class="flex items-center justify-between">
+            <p class="text-white dark:text-white">© 2024 CodeSpace. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
